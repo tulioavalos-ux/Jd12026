@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Página Principal -->
+  <url>
+    <loc>https://www.jd1noticias.com/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Exemplo de Notícia Individual -->
+  <url>
+    <loc>https://www.jd1noticias.com/noticia/exterm inio-animais-ccz</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>JD1 Notícias</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-13</news:publication_date>
+      <news:title>Em meio à investigação de extermínio de animais no CCZ, abaixo-assinado cobra auditoria</news:title>
+      <news:keywords>polícia, CCZ, animais, Campo Grande</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.jd1noticias.com/assets/noticia-principal.jpg</image:loc>
+      <image:title>Em meio à investigação de extermínio de animais no CCZ</image:title>
+    </image:image>
+  </url>
+
+  <!-- Seção de Programas -->
+  <url>
+    <loc>https://www.jd1noticias.com/programas</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Políticas -->
+  <url>
+    <loc>https://www.jd1noticias.com/politica-privacidade</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/termos-uso</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/contato</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>

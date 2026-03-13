@@ -1,0 +1,744 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// Colors
+$color-primary: #1fa0ee;
+$color-primary-dark: #1886c8;
+$color-primary-light: #66b7fc;
+$color-text-dark: #021f34;
+$color-text-medium: #224465;
+$color-text-light: #2f5a83;
+$color-bg-light: #f4f4f6;
+$color-bg-programs: #1886c8;
+$color-category-light: #d5e7fe;
+$color-divider: #d9d9d9;
+$color-divider-dark: #cfd1d8;
+$color-white: #ffffff;
+
+// Typography
+$font-family-base: 'Open Sans', sans-serif;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Spacing
+$container-max-width: 1120px;
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+$spacing-xxl: 64px;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1200px;
+
+// ==========================================================================
+// Reset & Base Styles
+// ==========================================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-regular;
+  color: $color-text-dark;
+  line-height: 1.5;
+  background-color: $color-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+// ==========================================================================
+// Utility Classes
+// ==========================================================================
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-sm;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 0 $spacing-md;
+  }
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $color-divider;
+  margin: $spacing-xxl 0;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin: $spacing-lg 0;
+  }
+}
+
+.divider-vertical {
+  width: 1px;
+  background-color: $color-divider-dark;
+  align-self: stretch;
+
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.site-header {
+  background-color: $color-primary-dark;
+  padding: $spacing-sm 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+  height: 54px;
+
+  &__icon {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    width: 97px;
+    height: 33px;
+    flex-shrink: 0;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+
+.btn-programas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: $color-primary-light;
+  color: $color-text-medium;
+  font-weight: $font-weight-bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: $spacing-sm;
+  border-radius: 8px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 480px) {
+    span {
+      display: none;
+    }
+  }
+}
+
+// ==========================================================================
+// Main Content
+// ==========================================================================
+
+.main-content {
+  padding: $spacing-xxl 0;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: $spacing-lg 0;
+  }
+}
+
+// ==========================================================================
+// Banner Section
+// ==========================================================================
+
+.banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 973px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// ==========================================================================
+// Featured Section
+// ==========================================================================
+
+.featured-section {
+  margin-bottom: $spacing-xxl;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.featured-grid {
+  display: flex;
+  gap: $spacing-lg;
+
+  @media (max-width: $breakpoint-desktop) {
+    flex-direction: column;
+  }
+}
+
+.featured-main {
+  flex-shrink: 0;
+  width: 480px;
+
+  @media (max-width: $breakpoint-desktop) {
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    margin-top: $spacing-sm;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+    line-height: 50px;
+    color: $color-text-dark;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+}
+
+// ==========================================================================
+// Carousel
+// ==========================================================================
+
+.carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+
+  &__image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    opacity: 0.9;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      height: 240px;
+    }
+  }
+
+  &__controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-lg;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: $color-primary-light;
+    padding: $spacing-xs;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--prev,
+    &--next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__indicators {
+    display: flex;
+    gap: 26px;
+  }
+
+  &__indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid $color-primary-dark;
+    background-color: transparent;
+
+    &--active {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+}
+
+// ==========================================================================
+// Category
+// ==========================================================================
+
+.category {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-primary;
+  font-weight: $font-weight-regular;
+
+  .featured-main & {
+    font-size: 16px;
+  }
+
+  &--light {
+    color: $color-primary-light;
+  }
+}
+
+// ==========================================================================
+// Featured Sidebar
+// ==========================================================================
+
+.featured-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+
+  @media (max-width: $breakpoint-desktop) {
+    gap: $spacing-lg;
+  }
+}
+
+.news-row {
+  display: flex;
+  gap: $spacing-lg;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+  }
+}
+
+.news-text-row {
+  display: flex;
+  gap: $spacing-lg;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+  }
+}
+
+// ==========================================================================
+// News Card
+// ==========================================================================
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  width: 256px;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 780 / 520;
+    overflow: hidden;
+    opacity: 0.9;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 26px;
+    color: $color-text-dark;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &--ranked {
+    .news-card__figure {
+      .rank-number {
+        position: absolute;
+        bottom: -46px;
+        right: -7px;
+        font-size: 160px;
+        font-weight: $font-weight-bold;
+        line-height: 1;
+        color: $color-white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3),
+          4px 4px 4px rgba(0, 0, 0, 0.15), 2px 2px 18px rgba(0, 0, 0, 0.25);
+        text-transform: uppercase;
+        pointer-events: none;
+
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 100px;
+          bottom: -28px;
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================================
+// News Text
+// ==========================================================================
+
+.news-text {
+  flex: 1;
+  min-width: 0;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    line-height: 34px;
+    color: $color-text-dark;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+}
+
+// ==========================================================================
+// Secondary News Section
+// ==========================================================================
+
+.secondary-news {
+  margin-bottom: $spacing-xxl;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.news-grid {
+  display: flex;
+  gap: $spacing-lg;
+
+  @media (max-width: $breakpoint-desktop) {
+    flex-direction: column;
+  }
+
+  .news-card {
+    flex: 1;
+    width: auto;
+
+    &__figure {
+      aspect-ratio: 480 / 270;
+    }
+  }
+}
+
+.ad-banner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-bg-light;
+  padding: $spacing-md;
+
+  img {
+    max-width: 300px;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: $breakpoint-desktop) {
+    order: -1;
+  }
+}
+
+// ==========================================================================
+// Most Read Section
+// ==========================================================================
+
+.most-read {
+  margin-bottom: $spacing-xxl;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: $font-weight-bold;
+    color: $color-primary-dark;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__grid {
+    display: flex;
+    gap: $spacing-lg;
+
+    @media (max-width: $breakpoint-desktop) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+    }
+  }
+}
+
+// ==========================================================================
+// Programs Section
+// ==========================================================================
+
+.programs-section {
+  background-color: $color-bg-programs;
+  padding: $spacing-xxl 0;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: $spacing-lg 0;
+  }
+}
+
+.programs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-lg;
+
+  @media (max-width: $breakpoint-desktop) {
+    justify-content: center;
+  }
+}
+
+.program-card {
+  width: 352px;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    max-width: 352px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  &__figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 480 / 270;
+    overflow: hidden;
+    opacity: 0.9;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 26px;
+    color: $color-category-light;
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 18px 0px rgba(0, 0, 0, 0.25),
+    4px 4px 4px 0px rgba(0, 0, 0, 0.15), 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.site-footer {
+  background-color: $color-text-dark;
+  color: $color-white;
+  padding: $spacing-lg 0;
+  margin-top: $spacing-xxl;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-md;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: $spacing-md;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+
+  a {
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

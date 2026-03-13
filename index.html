@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de notícias JD1 - As principais notícias de Mato Grosso do Sul sobre polícia, política, economia e muito mais">
+    <meta name="keywords" content="notícias, JD1, Mato Grosso do Sul, política, polícia, economia, Campo Grande">
+    <meta name="author" content="JD1 Notícias">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jd1noticias.com/">
+    <meta property="og:title" content="JD1 Notícias - Portal de Notícias de MS">
+    <meta property="og:description" content="As principais notícias de Mato Grosso do Sul">
+    <meta property="og:image" content="./assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.jd1noticias.com/">
+    <meta property="twitter:title" content="JD1 Notícias - Portal de Notícias de MS">
+    <meta property="twitter:description" content="As principais notícias de Mato Grosso do Sul">
+    <meta property="twitter:image" content="./assets/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.jd1noticias.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+    
+    <title>JD1 Notícias - Portal de Notícias de Mato Grosso do Sul</title>
+    
+    <!-- Schema.org markup para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "JD1 Notícias",
+      "url": "https://www.jd1noticias.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.jd1noticias.com/assets/logo.png"
+      },
+      "sameAs": [
+        "https://www.facebook.com/jd1noticias",
+        "https://twitter.com/jd1noticias",
+        "https://www.instagram.com/jd1noticias"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="/" class="logo" aria-label="JD1 Notícias - Página Inicial">
+                    <svg class="logo__icon" width="54" height="54" viewBox="0 0 54.3115 54.313" fill="none" aria-hidden="true">
+                        <path d="M27.1558 50.8299C14.1023 50.8299 3.48298 40.2107 3.48298 27.1572C3.48298 14.1037 14.1023 3.48441 27.1558 3.48441C40.2093 3.48441 50.8309 14.1037 50.8309 27.1572C50.8309 40.2107 40.2093 50.8299 27.1558 50.8299ZM27.1558 0C12.184 0 0 12.1831 0 27.1572C0 42.1289 12.184 54.3129 27.1558 54.3129C42.1299 54.3129 54.3115 42.1289 54.3115 27.1572C54.3115 12.1831 42.1299 0 27.1558 0Z" fill="#66B7FC"/>
+                        <path d="M27.1558 50.8299C14.1023 50.8299 3.48298 40.2107 3.48298 27.1572C3.48298 14.1037 14.1023 3.48441 27.1558 3.48441C40.2093 3.48441 50.8309 14.1037 50.8309 27.1572C50.8309 40.2107 40.2093 50.8299 27.1558 50.8299ZM27.1558 0C12.184 0 0 12.1831 0 27.1572C0 42.1289 12.184 54.3129 27.1558 54.3129C42.1299 54.3129 54.3115 42.1289 54.3115 27.1572C54.3115 12.1831 42.1299 0 27.1558 0Z" fill="#66B7FC"/>
+                    </svg>
+                    <svg class="logo__text" width="97" height="33" viewBox="0 0 97.1384 33.0832" fill="none" aria-hidden="true">
+                        <path d="M55.9503 43.3957L55.9358 26.6169L55.9503 22.6154L55.9358 0.327627C54.7065 0.758164 45.3287 10.7809 44.5942 11.5796C42.7786 13.5531 40.899 15.3049 39.0799 17.1427C37.9258 18.3081 34.1671 21.9558 33.5398 23.0296C32.5669 23.5451 25.8906 30.3697 25.1581 31.3637C23.9036 32.4016 24.4327 36.1857 24.4249 38.2059C24.4159 40.7193 24.3497 43.3026 24.4206 45.8075C24.6259 52.4311 24.4218 59.3734 24.4171 66.0333C24.4151 69.4129 24.4159 72.7937 24.4151 76.1733C24.4151 79.7594 24.2889 82.3485 23.9897 85.7601C23.1602 87.6166 23.062 89.091 20.9689 89.8168C17.7428 90.9355 4.11173 90.5002 0.00430083 90.5038L0 118.595C6.48962 118.999 14.1722 118.641 20.7604 118.641C28.0211 118.641 32.9503 118.864 39.0323 115.91C48.3716 111.379 54.7143 100.662 55.7527 90.538C56.3554 88.6472 55.9592 70.8113 55.9592 67.2119C55.9592 59.3119 55.7991 51.2778 55.9503 43.3957Z" fill="white"/>
+                    </svg>
+                </a>
+
+                <!-- Navigation Button -->
+                <a href="#programas" class="btn-programas" aria-label="Acessar programas">
+                    <span>Programas</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M6.59971 8.48531L0 1.88561L1.88563 0L10.3709 8.48531L1.88563 16.9705L0 15.0849L6.59971 8.48531Z" fill="#224465"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" role="main">
+        <div class="container">
+            
+            <!-- Banner Top -->
+            <section class="banner-section" aria-label="Banner publicitário">
+                <div class="banner-wrapper">
+                    <img src="./assets/banner-top.png" alt="Publicidade" width="973" height="251">
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Featured News Section -->
+            <section class="featured-section">
+                <div class="featured-grid">
+                    
+                    <!-- Main Featured Article -->
+                    <article class="featured-main">
+                        <div class="carousel">
+                            <div class="carousel__image">
+                                <img src="./assets/noticia-principal.jpg" alt="Em meio à investigação de extermínio de animais no CCZ, abaixo-assinado cobra auditoria" width="480" height="320">
+                            </div>
+                            
+                            <div class="featured-main__content">
+                                <span class="category">Polícia</span>
+                                <h1 class="featured-main__title">
+                                    Em meio à investigação de extermínio de animais no CCZ, abaixo-assinado cobra auditoria
+                                </h1>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <div class="carousel__controls" role="group" aria-label="Controles do carrossel">
+                                <button class="carousel__btn carousel__btn--prev" aria-label="Notícia anterior">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                        <path d="M10.3709 8.48531L16.9706 1.88561L15.085 0L6.59971 8.48531L15.085 16.9705L16.9706 15.0849L10.3709 8.48531Z" fill="#2F5A83"/>
+                                    </svg>
+                                </button>
+                                
+                                <div class="carousel__indicators" role="tablist" aria-label="Indicadores do carrossel">
+                                    <button class="carousel__indicator" role="tab" aria-selected="false" aria-label="Slide 1"></button>
+                                    <button class="carousel__indicator carousel__indicator--active" role="tab" aria-selected="true" aria-label="Slide 2"></button>
+                                    <button class="carousel__indicator" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                                    <button class="carousel__indicator" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                                </div>
+                                
+                                <button class="carousel__btn carousel__btn--next" aria-label="Próxima notícia">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                        <path d="M6.59971 8.48531L0 1.88561L1.88563 0L10.3709 8.48531L1.88563 16.9705L0 15.0849L6.59971 8.48531Z" fill="#2F5A83"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="divider-vertical"></div>
+
+                    <!-- Side News -->
+                    <aside class="featured-sidebar">
+                        <div class="news-row">
+                            <article class="news-card">
+                                <a href="#" class="news-card__link">
+                                    <figure class="news-card__figure">
+                                        <img src="./assets/noticia-1.jpg" alt="Alcolumbre vai analisar pedido para anular decisão que envolve Lulinha na CPMI do INSS" width="256" height="171" loading="lazy">
+                                    </figure>
+                                    <div class="news-card__content">
+                                        <span class="category">Política</span>
+                                        <h3 class="news-card__title">
+                                            Alcolumbre vai analisar pedido para anular decisão que envolve Lulinha na CPMI do INSS
+                                        </h3>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="news-card">
+                                <a href="#" class="news-card__link">
+                                    <figure class="news-card__figure">
+                                        <img src="./assets/noticia-2.jpg" alt="Fiems aposta em robótica para qualificar mão de obra industrial" width="256" height="171" loading="lazy">
+                                    </figure>
+                                    <div class="news-card__content">
+                                        <span class="category">Cidade</span>
+                                        <h3 class="news-card__title">
+                                            Fiems aposta em robótica para qualificar mão de obra industrial
+                                        </h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="news-text-row">
+                            <article class="news-text">
+                                <a href="#" class="news-text__link">
+                                    <span class="category">Saúde Pública</span>
+                                    <h3 class="news-text__title">
+                                        MPMS vê irregularidades sanitárias no Hospital do Pênfigo e cobra providências
+                                    </h3>
+                                </a>
+                            </article>
+
+                            <div class="divider-vertical"></div>
+
+                            <article class="news-text">
+                                <a href="#" class="news-text__link">
+                                    <span class="category">Proposta Legislativa</span>
+                                    <h3 class="news-text__title">
+                                        Câmara aprova isenção de taxa da ANTT para empresas de ônibus afetadas pela pandemia
+                                    </h3>
+                                </a>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Secondary News Section -->
+            <section class="secondary-news" aria-labelledby="secondary-news-title">
+                <h2 id="secondary-news-title" class="sr-only">Outras notícias em destaque</h2>
+                
+                <div class="news-grid">
+                    <div class="ad-banner">
+                        <img src="./assets/banner-lateral.png" alt="Publicidade" width="300" height="250">
+                    </div>
+
+                    <article class="news-card">
+                        <a href="#" class="news-card__link">
+                            <figure class="news-card__figure">
+                                <img src="./assets/noticia-3.jpg" alt="Caixa paga parcela do Bolsa Família a beneficiários do NIS final 0 nesta sexta" width="320" height="180" loading="lazy">
+                            </figure>
+                            <div class="news-card__content">
+                                <span class="category">Economia</span>
+                                <h3 class="news-card__title">
+                                    Caixa paga parcela do Bolsa Família a beneficiários do NIS final 0 nesta sexta
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="news-card">
+                        <a href="#" class="news-card__link">
+                            <figure class="news-card__figure">
+                                <img src="./assets/noticia-4.jpg" alt="MS abre licitação para construção da Casa da Mulher Brasileira em Corumbá" width="320" height="180" loading="lazy">
+                            </figure>
+                            <div class="news-card__content">
+                                <span class="category">Geral</span>
+                                <h3 class="news-card__title">
+                                    MS abre licitação para construção da Casa da Mulher Brasileira em Corumbá
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Most Read Section -->
+            <section class="most-read" aria-labelledby="most-read-title">
+                <h2 id="most-read-title" class="most-read__title">Mais Lidas</h2>
+                
+                <div class="most-read__grid">
+                    <article class="news-card news-card--ranked">
+                        <a href="#" class="news-card__link">
+                            <figure class="news-card__figure">
+                                <img src="./assets/noticia-5.jpg" alt="Homem fica dois anos sem pagar pensão e acaba preso em Campo Grande" width="256" height="171" loading="lazy">
+                                <span class="rank-number" aria-label="Posição 1">1</span>
+                            </figure>
+                            <div class="news-card__content">
+                                <span class="category">Polícia</span>
+                                <h3 class="news-card__title">
+                                    Homem fica dois anos sem pagar pensão e acaba preso em Campo Grande
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="news-card news-card--ranked">
+                        <a href="#" class="news-card__link">
+                            <figure class="news-card__figure">
+                                <img src="./assets/noticia-6.jpg" alt="Vigilante é morto e duas adolescentes ficam feridas em ataque a tabacaria do Guanandi" width="256" height="171" loading="lazy">
+                                <span class="rank-number" aria-label="Posição 2">2</span>
+                            </figure>
+                            <div class="news-card__content">
+                                <span class="category">Polícia</span>
+                                <h3 class="news-card__title">
+                                    Vigilante é morto e duas adolescentes ficam feridas em ataque a tabacaria do Guanandi
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="news-card news-card--ranked">
+                        <a href="#" class="news-card__link">
+                            <figure class="news-card__figure">
+                                <img src="./assets/noticia-7.jpg" alt="Na volta do banho, marido encontra esposa morta em Campo Grande" width="256" height="171" loading="lazy">
+                                <span class="rank-number" aria-label="Posição 3">3</span>
+                            </figure>
+                            <div class="news-card__content">
+                                <span class="category">Polícia</span>
+                                <h3 class="news-card__title">
+                                    Na volta do banho, marido encontra esposa morta em Campo Grande
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="news-card news-card--ranked">
+                        <a href="#" class="news-card__link">
+                            <figure class="news-card__figure">
+                                <img src="./assets/noticia-8.jpg" alt="Funcionário da prefeitura é demitido após acusar secretário de estupro em Campo Grande" width="256" height="171" loading="lazy">
+                                <span class="rank-number" aria-label="Posição 4">4</span>
+                            </figure>
+                            <div class="news-card__content">
+                                <span class="category">Polícia</span>
+                                <h3 class="news-card__title">
+                                    Funcionário da prefeitura é demitido após acusar secretário de estupro em Campo Grande
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Banner Bottom -->
+            <section class="banner-section" aria-label="Banner publicitário">
+                <div class="banner-wrapper">
+                    <img src="./assets/banner-bottom.png" alt="Publicidade" width="973" height="251" loading="lazy">
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Programs Section -->
+    <section class="programs-section" id="programas">
+        <div class="container">
+            <div class="programs-grid">
+                <article class="program-card">
+                    <a href="#" class="program-card__link">
+                        <figure class="program-card__figure">
+                            <img src="./assets/programa-1.jpg" alt="JD1TV: Especialista desmistifica vacinas e fala sobre imunização contra maiores cepas" width="352" height="198" loading="lazy">
+                            <div class="play-button" aria-hidden="true">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <path d="M9.76033 12.0683L5.13417 14.995V9.01805L9.76033 12.0683Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </figure>
+                        <div class="program-card__content">
+                            <span class="category category--light">JD1TV</span>
+                            <h3 class="program-card__title">
+                                JD1TV: Especialista desmistifica vacinas e fala sobre imunização contra maiores cepas
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="program-card">
+                    <a href="#" class="program-card__link">
+                        <figure class="program-card__figure">
+                            <img src="./assets/programa-2.jpg" alt="Saúde e Bem-Estar: Especialista avalia avanços nos Transplantes de Órgãos no Mato Grosso do Sul" width="352" height="198" loading="lazy">
+                            <div class="play-button" aria-hidden="true">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <path d="M9.76033 12.0683L5.13417 14.995V9.01805L9.76033 12.0683Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </figure>
+                        <div class="program-card__content">
+                            <span class="category category--light">Saúde e Bem-Estar</span>
+                            <h3 class="program-card__title">
+                                Saúde e Bem-Estar: Especialista avalia avanços nos Transplantes de Órgãos no Mato Grosso do Sul
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="program-card">
+                    <a href="#" class="program-card__link">
+                        <figure class="program-card__figure">
+                            <img src="./assets/programa-3.jpg" alt="Conexão JD1: Estevão Petrallás faz análise sobre futebol sul-mato-grossense" width="352" height="198" loading="lazy">
+                            <div class="play-button" aria-hidden="true">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <path d="M9.76033 12.0683L5.13417 14.995V9.01805L9.76033 12.0683Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </figure>
+                        <div class="program-card__content">
+                            <span class="category category--light">Conexão JD1</span>
+                            <h3 class="program-card__title">
+                                Conexão JD1: Estevão Petrallás faz análise sobre futebol sul-mato-grossense
+                            </h3>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2026 JD1 Notícias. Todos os direitos reservados.</p>
+                <nav class="footer-nav" aria-label="Links do rodapé">
+                    <a href="#politica-privacidade">Política de Privacidade</a>
+                    <a href="#termos-uso">Termos de Uso</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js" defer></script>
+</body>
+</html>
