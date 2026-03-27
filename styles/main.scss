@@ -712,6 +712,13 @@ svg {
   background: $neutral-50;
 }
 
+.ad-frame picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
 .ad-frame img {
   width: 100%;
 }
@@ -719,6 +726,13 @@ svg {
 .ad-frame--wide {
   max-width: 973px;
   margin-inline: auto;
+}
+
+.ad-frame--wide picture,
+.ad-frame--wide img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .ad-frame--square {
@@ -1105,23 +1119,21 @@ svg {
 }
 
 .article-author__avatar {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 48px;
   height: 48px;
   border-radius: 50%;
   background: linear-gradient(180deg, $neutral-100 0%, $neutral-200 100%);
-  color: $jd1-ocean-800;
-  font-size: 16px;
-  font-weight: 700;
   flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 
 .article-author__copy {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 4px;
   min-width: 0;
 }
 
@@ -1223,8 +1235,10 @@ svg {
 }
 
 .article-inline-banner .ad-frame img {
-  aspect-ratio: 970 / 250;
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .article-inline-links {
@@ -1955,6 +1969,10 @@ a:focus-visible,
     width: min(100vw, 390px);
   }
 
+  .ad-frame--wide picture {
+    width: min(100%, 300px);
+  }
+
   .topic-nav {
     display: none;
   }
@@ -2087,6 +2105,10 @@ a:focus-visible,
     gap: 20px;
     font-size: 19px;
     line-height: 1.68;
+  }
+
+  .economy-stack {
+    grid-template-rows: auto 40px auto 40px auto;
   }
 
   .article-inline-links a {
@@ -2273,6 +2295,7 @@ a:focus-visible,
   }
 
   .economy-stack {
+    grid-template-rows: auto 40px auto 40px auto;
     gap: 0;
   }
 

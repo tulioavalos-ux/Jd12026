@@ -1,0 +1,11 @@
+{
+  "name": "jd1-noticias-static",
+  "private": true,
+  "scripts": {
+    "tailwind:build": "tailwindcss -c ./tailwind.config.cjs -i ./styles/tailwind.input.css -o ./styles/tailwind.css --minify",
+    "tailwind:watch": "tailwindcss -c ./tailwind.config.cjs -i ./styles/tailwind.input.css -o ./styles/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
