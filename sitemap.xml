@@ -63,15 +63,29 @@
   </url>
 
   <url>
-    <loc>https://www.jd1noticias.com/termos-uso</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://www.jd1noticias.com/termos-uso.html</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.jd1noticias.com/contato</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://www.jd1noticias.com/contato.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/anuncie.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/expediente.html</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
