@@ -48,10 +48,38 @@
 
   <!-- Seção de Programas -->
   <url>
-    <loc>https://www.jd1noticias.com/programas</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://www.jd1noticias.com/programas.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/programa.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/video.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/edicao-impressa.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jd1noticias.com/edicao-impressa-detalhe.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Políticas -->

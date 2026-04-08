@@ -72,7 +72,7 @@ npm run tailwind:watch
 
 ### Regras de uso
 
-- Use apenas classes prefixadas com `tw-`, por exemplo `tw-mt-4` ou `tw-hidden`.
+- Use classes utilitarias no padrao do Tailwind, por exemplo `mt-4` ou `hidden`.
 - Evite reescrever componentes inteiros em Tailwind se eles ja existem no `main.scss`.
 - Priorize Tailwind para ajustes locais de espacamento, alinhamento, display e pequenas variacoes visuais.
 

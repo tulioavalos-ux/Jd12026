@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html"],
-  prefix: "tw-",
   corePlugins: {
     preflight: false
   },

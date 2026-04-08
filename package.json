@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "sh -c 'trap \"kill 0\" EXIT INT TERM; npm run scss:watch & npm run tailwind:watch & wait'",
-    "scss:build": "sass styles/main.scss styles/main.css",
-    "scss:watch": "sass --watch styles/main.scss:styles/main.css",
+    "scss:build": "sass --style=compressed --no-source-map styles/main.scss styles/main.css",
+    "scss:watch": "sass --watch --style=compressed styles/main.scss:styles/main.css",
     "tailwind:build": "tailwindcss -c ./tailwind.config.cjs -i ./styles/tailwind.input.css -o ./styles/tailwind.css --minify",
     "tailwind:watch": "tailwindcss -c ./tailwind.config.cjs -i ./styles/tailwind.input.css -o ./styles/tailwind.css --watch"
   },
