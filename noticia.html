@@ -332,8 +332,6 @@
               <p>Outro episodio destacado no documento e o do cachorro Lucas Ursinho, que teria sido admitido para abate sem diagnostico completo e sem oportunidade efetiva de tratamento. O abaixo-assinado sustenta que os casos apontam para a necessidade de revisao estrutural do atendimento, com definicao de protocolos mais claros, publicidade ativa dos dados e reforco das politicas de bem-estar animal.</p>
             </div>
 
-            <div class="article-top-banner-anchor" data-article-top-banner-anchor></div>
-
             <section class="banner-slot article-inline-banner article-inline-banner--deferred" aria-label="Publicidade no meio da materia">
               <figure class="ad-frame ad-frame--wide">
                 <picture class="ad-picture ad-picture--responsive">
@@ -600,39 +598,6 @@
   <a class="whatsapp-float" href="https://wa.me/556730297778" aria-label="Conversar com o JD1 Noticias no WhatsApp">
     <span class="ri-whatsapp-line social-icon" aria-hidden="true"></span>
   </a>
-
-  <script>
-    (() => {
-      const topBanner = document.querySelector("[data-top-banner]");
-      const mobileAnchor = document.querySelector("[data-article-top-banner-anchor]");
-      const sectionStack = document.querySelector(".article-page .section-stack");
-      const articleShell = document.querySelector(".article-shell");
-
-      if (!topBanner || !mobileAnchor || !sectionStack || !articleShell) {
-        return;
-      }
-
-      const mobileQuery = window.matchMedia("(max-width: 820px)");
-
-      const syncBannerPlacement = () => {
-        if (mobileQuery.matches) {
-          mobileAnchor.appendChild(topBanner);
-          return;
-        }
-
-        sectionStack.insertBefore(topBanner, articleShell);
-      };
-
-      syncBannerPlacement();
-
-      if (typeof mobileQuery.addEventListener === "function") {
-        mobileQuery.addEventListener("change", syncBannerPlacement);
-        return;
-      }
-
-      mobileQuery.addListener(syncBannerPlacement);
-    })();
-  </script>
 
   <script>
     (() => {
